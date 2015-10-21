@@ -1,0 +1,20 @@
+CouchDB setup for KVBench:
+
+1. If database "kvbench" exists, delete it
+2. Create a database called "kvbench"
+3. Create a new document, with the following data:
+
+{
+  "_id": "_design/KVB",
+  "language": "javascript",
+  "views": {
+    "seconds": {
+      "map": "function(doc) {\n  emit(doc.seconds.toFixed(0), doc.seconds);\n}",
+      "reduce": "_count"
+    },
+    "summary": {
+      "map": "function(doc) {\n  emit(doc.summary, 1);\n}",
+      "reduce": "_count"
+    }
+  }
+}
