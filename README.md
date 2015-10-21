@@ -94,21 +94,12 @@ Benchmarking tool for NoSQL databases K(ey) V(alue) Bench(mark)
 
 
 7. Why KV Bench
-		http://guide.couchdb.org/draft/performance.html
-		"A Call to Arms
-  		We're in the market for databases and key/value stores. Every solution has a sweet spot in terms of
-  		data, hardware, setup, and operation, and there are enough permutations that you can pick the one that
-  		is closest to your problem. But how to find out? Ideally, you download and install all possible
-  		candidates, create a profiling test suite with proper testing data, make extensive tests, and compare
-  		the results. This can easily take weeks, and you might not have that much time.
+	
+	The following is diferct from <http://guide.couchdb.org/draft/performance.html>:
 
-  		We would like to ask developers of storage systems to compile a set of profiling suites that simulate
-  		different usage patterns of their systems (read-heavy and write-heavy loads, fault tolerance,
-  		distributed operation, and many more). A fault-tolerance suite should include the steps necessary to
-  		get data live again, such as any rebuild or checkup time. We would like users of these systems to help
-  		their developers find out how to reliably measure different scenarios.
+	A Call to Arms
+We're in the market for databases and key/value stores. Every solution has a sweet spot in terms of data, hardware, setup, and operation, and there are enough permutations that you can pick the one that is closest to your problem. But how to find out? Ideally, you download and install all possible candidates, create a profiling test suite with proper testing data, make extensive tests, and compare the results. This can easily take weeks, and you might not have that much time.
 
-  		We are working on CouchDB, and we'd like very much to have such a suite! Even better, developers could
-  		agree (a far-fetched idea, to be sure) on a set of benchmarks that objectively measure performance for
-  		easy comparison. We know this is a lot of work and the results may still be questionable, but it'll
-  		help our users a great deal when figuring out what to use."
+We would like to ask developers of storage systems to compile a set of profiling suites that simulate different usage patterns of their systems (read-heavy and write-heavy loads, fault tolerance, distributed operation, and many more). A fault-tolerance suite should include the steps necessary to get data live again, such as any rebuild or checkup time. We would like users of these systems to help their developers find out how to reliably measure different scenarios.
+
+We are working on CouchDB, and we'd like very much to have such a suite! Even better, developers could agree (a far-fetched idea, to be sure) on a set of benchmarks that objectively measure performance for easy comparison. We know this is a lot of work and the results may still be questionable, but it'll help our users a great deal when figuring out what to use.
